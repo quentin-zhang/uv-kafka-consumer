@@ -40,10 +40,10 @@ services:
   uvscheduler:
     image: uv-kafka-consumer:0.0.2
     ports:
-      - "8080:8080"
+      - "8081:8080"
     logging:
       driver: gelf
       options:
         gelf-address: udp://xx.xx.xx.xx:12201
-        tag: "uvscheduler"
+        tag: "uv-kafka-consumer"
 ```
