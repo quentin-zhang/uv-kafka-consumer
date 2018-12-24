@@ -12,7 +12,7 @@ public class ForeverService {
     private static List<String>  sqlList = new ArrayList<>();
     //直接插入
     public static void insertDirect(String sql) {
-        if(sqlList.size() < 100)
+        if(sqlList.size() < 10)
         {
             sqlList.add(sql);
         }
